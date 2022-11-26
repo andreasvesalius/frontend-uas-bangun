@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar';
+import Sitou from './components/Sitou';
 import TopPic from './components/TopPic';
 
 // const rowOne = [
@@ -11,7 +12,7 @@ import TopPic from './components/TopPic';
 
 function App() {
   return (
-    <div>
+    <div className='w-full h-full'>
       <NavBar/>
       <TopPic/>
     </div>

@@ -8,8 +8,8 @@ const NavBar = () => {
                 <h1 className="">Manjo Pasiar</h1>
                 <nav className="">
                     <ul className="flex space-x-3">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="1">Home</a></li>
+                        <li><a href="1">About Us</a></li>
                     </ul>
                 </nav>
             </div>
