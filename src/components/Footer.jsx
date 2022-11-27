@@ -3,20 +3,20 @@ import React from "react";
 const Footer = () => {
     return(
         <>
-        <div className="bg-[#D9D9D9] rounded-t-lg">
-            <div className="flex justify-between px-6">
-                <h1 className="pt-10 pl-16">Manjo Pasiar</h1>
-                <div className="">
+        <div className="rounded-xl bg-[#D9D9D9] mx-1 py-3 font-medium">
+            <div className=" flex justify-between px-4 rouunded-xl">
+                <h1 className="pt-10">Manjo Pasiar</h1>
+                <div className="text-center">
                     <h2>Hubungi Kami</h2>
                     <div className="bg-[#868686] rounded-lg space-y-2 mt-2 px-4 py-2">
-                        <p>Veron - ...</p>
-                        <p>Ignatius - ...</p>
+                        <p>Veron - +62</p>
+                        <p>Ignatius - +62</p>
                     </div>
                 </div>
             </div>
-            <div className="bg-[#868686] text-center mt-3">
-                <p>Copyright © 2022 . All Right Reserved  . ManjoPasiar</p>
-            </div>
+        </div>
+        <div className="bg-[#868686] text-center mt-2 rounded-t-xl">
+            <p className="font-semibold">Copyright © 2022 || All Right Reserved <br /> ManjoPasiar</p>
         </div>
     </>
     )

@@ -4,12 +4,13 @@ import Rectangle from '../assets/rectangle.png';
 const TopPic = () => {
     return(
         <>
-        <div className="my-2 relative mx-2">
-            <img src={Rectangle} alt="" className="rounded-lg" />
+        <div className="py-2 relative mx-1">
+            <img src={Rectangle} alt="" className="rounded-lg h-full w-full"/>
             <div className="absolute top-0 container text-center">
                 <h1 className="font-semibold text-[30px] pt-2">Manjo Pasiar</h1>
-                <p>Mari Berkunjung</p>
-                <p className="pt-2 text-[12px] text-slate-500 ">Selamat datang di web ManjoPasiar</p>
+                <p className="text-[17px]">Mari Berkunjung</p>
+                <p className="pt-2 text-[13px] text-slate-500 ">Selamat datang di Website ManjoPasiar <br />
+                Website yang menyediakan <br /> informasi rekomendasi destinasi wisata <br /> di Kota Manado bagi anda.</p>
             </div>
         </div>
     </>
