@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="bg-[#868686] text-center mt-2 rounded-t-xl">
-            <p className="font-semibold">Copyright © 2022 || All Right Reserved <br /> ManjoPasiar</p>
+            <p className="font-semibold">Copyright © 2022 All Right Reserved || ManjoPasiar</p>
         </div>
     </>
     )
