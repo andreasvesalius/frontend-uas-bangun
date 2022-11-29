@@ -29,7 +29,7 @@ function App() {
     <div className='w-full h-full '>
       <NavBar/>
       <TopPic/>
-      <div className="rounded-xl m-1 py-1 pl-2 font-semibold text-[17px]">
+      <div className="rounded-xl m-1 py-1 pl-2 font-semibold text-[17px] md:text-[23px]">
         <h1>Destinasi Wisata di Kota Manado</h1>
       </div>
       <div className="md:grid md:grid-cols-2">
