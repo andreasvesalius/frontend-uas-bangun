@@ -4,18 +4,19 @@ import whats from "../assets/whatsapp.png"
 const Footer = () => {
     return(
         <>
-        <div className="rounded-xl bg-[#D9D9D9] mx-1 py-3 font-medium">
-            <div className="flex-cols justify-between px-4 rouunded-xl md:flex">
+        <div className="rounded-xl bg-[#D9D9D9] py-3 font-medium mx-1">
+            <div className="flex-cols px-4 rouunded-xl md:flex justify-between">
                 <div className="my-auto text-center hidden md:block">
                     <h1 className="text-[18px] md:text-[27px]">Manjo Pasiar</h1>
                     <p className="text-[15px] md:text-[22px]">Manado, Sulawesi Utara</p>
                 </div>
-                <div className="pb-1 md:my-auto">
+                <div className="md:my-auto">
                     <h2 className="text-center text-[20px] pb-2 md:text-[27px]">Hubungi Kami</h2>
-                    <div className="bg-[#868686] rounded-lg space-y-3 mt-2 px-4 py-2">
-                        <div className="flex justify-evenly">
+                    <div className="bg-[#868686] rounded-lg mt-2 px-4 py-2 mb-2">
+                        <img src={whats} alt="" className="md:hidden w-[30px] h-[30px] mx-auto mb-2" />
+                        <div className="flex justify-evenly pb-2">
                             <img src={whats} alt="" className="w-[20px] h-[20px] mt-1 mr-2 md:w-[30px] md:h-[30px] hidden md:block"/>
-                            <div className="flex md:space-x-10">
+                            <div className="flex md:space-x-10 ">
                                 <p className="md:text-[22px] md:font-semibold">Veron</p>
                                 <p className="text-[12px] md:text-[18px] pt-1">+62 123-123-123</p>
                             </div>
