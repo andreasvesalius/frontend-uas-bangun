@@ -6,6 +6,8 @@ import NavBar from "../components/NavBar";
 import TempatWisata from "../components/tempatWisata";
 import View from "../assets/view.png";
 import Comment from "../components/Comment";
+import subWisata from "../components/subWisata";
+import RectangleSub from "../assets/rectanglesub.png";
 
 const imgWisata = [
     {
@@ -14,18 +16,13 @@ const imgWisata = [
       deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
    },
     {
-      img : View,
-      destinasi : "God Bless Park",
+      img : RectangleSub,
+      destinasi : "Pohon Kasih",
       deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
    },
     {
-      img : View,
-      destinasi : "Boulevard Tuminting",
-      deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
-   },
-    {
-      img : View,
-      destinasi : "Malalayang Beach Walk",
+      img : RectangleSub,
+      destinasi : "Pohon Kasih",
       deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
    },
   ]
@@ -36,7 +33,11 @@ const detailWisata = () => {
             <NavBar/>
             {imgWisata.map((data) => (
                 <TempatWisata img={data.img} destinasi={data.destinasi} deskripsi={data.deskripsi}/>
-            ))}    
+            ))}
+
+            {/* {imgWisata.map((data) => (
+                <subWisata img={data.img} subTempat={data.subTempat} deskripsi={data.deskripsi}/>
+            ))}     */}
             <Comment/>
             <Footer/>
         </>

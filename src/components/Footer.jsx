@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
                 <div className="md:my-auto">
                     <h2 className="text-center text-[20px] pb-2 md:text-[27px]">Hubungi Kami</h2>
-                    <div className="bg-[#868686] rounded-lg mt-2 px-4 py-2 mb-2">
+                    <div className="bg-[#868686] rounded-lg mt-2 md:px-4 md:py-2 mb-2">
                         <img src={whats} alt="" className="md:hidden w-[30px] h-[30px] mx-auto mb-2" />
                         <div className="flex justify-evenly pb-2">
                             <img src={whats} alt="" className="w-[20px] h-[20px] mt-1 mr-2 md:w-[30px] md:h-[30px] hidden md:block"/>

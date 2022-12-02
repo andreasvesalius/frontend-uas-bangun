@@ -7,7 +7,7 @@ const DestiNasi = ({img, destinasi}) => {
         <div>
             <div className="relative">
                 <Link to={'/detailWisata'}> <img src={img} alt="" className="rounded-xl p-1 w-full" /> </Link>
-                <h2 className="absolute bottom-3 left-3 text-white font-bold">{destinasi}</h2>
+                <h2 className="absolute bottom-3 left-3 text-white font-bold lg:text-[25px] xl:text-[32px]">{destinasi}</h2>
             </div>
         </div>
     </>
