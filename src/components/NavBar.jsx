@@ -12,7 +12,7 @@ const NavBar = () => {
                 <nav className="">
                     <ul className="space-x-3 md:text-[20px] hidden md:flex xl:text-[30px] xl:space-x-6">
                         <li><Link to={'/'}>Beranda</Link></li>
-                        <li><Link to={'/detailWisata'}>Tentang Kami</Link></li>
+                        <li><Link to={'/'}>Tentang Kami</Link></li>
                     </ul>
                 </nav>
                 <div className="flex bg-white w-f rounded-3xl p-1 md:hidden">

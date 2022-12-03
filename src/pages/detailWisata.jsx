@@ -1,7 +1,7 @@
 import React from "react";
-import axios from "axios";
+// import axios from "axios";
 import Footer from "../components/Footer";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import TempatWisata from "../components/tempatWisata";
 import View from "../assets/view.png";
@@ -32,20 +32,15 @@ const imgWisata = [
     {
       img : RectangleSub,
       tempat : "Pohon Kasih",
-      deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
-   },
-  //   {
-  //     img : RectangleSub,
-  //     tempat : "Pohon Kasih",
-  //     deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
-  //  },
+      deskripsi : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque quisquam molestiae minima quam aliquid ipsa accusantium cum ex totam ratione laudantium culpa obcaecati consequuntur illo nisi accusamus et placeat inventore voluptatibus, adipisci similique qui?",
+   }, 
   ]
 
   const Wisata1 = [
     {
       img : RectangleSub,
-      tempat : "Pohon Kasih",
-      deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
+      tempat : "Area Food Truck",
+      deskripsi : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque quisquam molestiae minima quam aliquid ipsa accusantium cum ex totam ratione laudantium culpa obcaecati consequuntur illo nisi accusamus et placeat inventore voluptatibus, adipisci similique qui?",
    },
   ]
 
