@@ -6,8 +6,9 @@ import NavBar from "../components/NavBar";
 import TempatWisata from "../components/tempatWisata";
 import View from "../assets/view.png";
 import Comment from "../components/Comment";
-import subWisata from "../components/subWisata";
+import SubWisata from "../components/subWisata";
 import RectangleSub from "../assets/rectanglesub.png";
+import SubWisata1 from "../components/subWisata1";
 
 const imgWisata = [
     {
@@ -15,14 +16,35 @@ const imgWisata = [
       destinasi : "Kawasan Megamas",
       deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
    },
+  //   {
+  //     img : RectangleSub,
+  //     destinasi : "Pohon Kasih",
+  //     deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
+  //  },
+  //   {
+  //     img : RectangleSub,
+  //     destinasi : "Pohon Kasih",
+  //     deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
+  //  },
+  ]
+
+  const Wisata = [
     {
       img : RectangleSub,
-      destinasi : "Pohon Kasih",
+      tempat : "Pohon Kasih",
       deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
    },
+  //   {
+  //     img : RectangleSub,
+  //     tempat : "Pohon Kasih",
+  //     deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
+  //  },
+  ]
+
+  const Wisata1 = [
     {
       img : RectangleSub,
-      destinasi : "Pohon Kasih",
+      tempat : "Pohon Kasih",
       deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
    },
   ]
@@ -34,10 +56,14 @@ const detailWisata = () => {
             {imgWisata.map((data) => (
                 <TempatWisata img={data.img} destinasi={data.destinasi} deskripsi={data.deskripsi}/>
             ))}
-
-            {/* {imgWisata.map((data) => (
-                <subWisata img={data.img} subTempat={data.subTempat} deskripsi={data.deskripsi}/>
-            ))}     */}
+            <div className="">
+              {Wisata.map((data) => (
+                  <SubWisata img={data.img} tempat={data.tempat} deskripsi={data.deskripsi}/>
+              ))}    
+              {Wisata1.map((data) => (
+                  <SubWisata1 img={data.img} tempat={data.tempat} deskripsi={data.deskripsi}/>
+              ))} 
+            </div>
             <Comment/>
             <Footer/>
         </>
