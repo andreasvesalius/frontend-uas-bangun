@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const subWisata = ({img, tempat, deskripsi}) => {
     return(
         <>
-        <div className="mb-20 mx-4">
+        <div className="mb-20 mx-1">
             <div className="space-y-3 md:hidden mb-8">
-                <h1>{tempat}</h1>
+                <h1 className="text-md font-medium text-left">{tempat}</h1>
                 <img src={img} alt="" className=""/>
                 <h1>{deskripsi}</h1>
             </div>

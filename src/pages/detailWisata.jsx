@@ -14,7 +14,7 @@ const imgWisata = [
     {
       img : View,
       destinasi : "Kawasan Megamas",
-      deskripsi : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, iste?",
+      deskripsi : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque quisquam molestiae minima quam aliquid ipsa accusantium cum ex totam ratione laudantium culpa obcaecati consequuntur illo nisi accusamus et placeat inventore voluptatibus, adipisci similique qui?",
    },
   //   {
   //     img : RectangleSub,
