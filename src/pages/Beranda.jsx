@@ -33,7 +33,7 @@ const Beranda = () => {
             <div className='w-full h-full '>
             <NavBar/>
             <TopPic/>
-            <div className="rounded-xl m-1 py-1 pl-2 font-semibold text-[17px] md:text-[23px] lg:text-[32px] xl:text-[42px]">
+            <div className="rounded-xl m-1 py-1 pl-2 font-semibold text-[17px] md:text-[23px] lg:text-[32px] xl:text-[42px] text-center md:py-5 bg-[#FFF7E9]">
                 <h1>Destinasi Wisata di Kota Manado</h1>
             </div>
             <div className="md:grid md:grid-cols-2">
