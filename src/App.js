@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Beranda from'./pages/Beranda';
 import DetailWisata from './pages/detailWisata';
 
