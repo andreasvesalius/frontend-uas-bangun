@@ -9,11 +9,12 @@ import Comment from "../components/Comment";
 import SubWisata from "../components/subWisata";
 import RectangleSub from "../assets/rectanglesub.png";
 import SubWisata1 from "../components/subWisata1";
+import mbw from "../assets/mbw.jpg";
 
 const imgWisata = [
     {
-      img : View,
-      destinasi : "Kawasan Megamas",
+      img : mbw,
+      destinasi : "Malalayang Beach Walk",
       deskripsi : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque quisquam molestiae minima quam aliquid ipsa accusantium cum ex totam ratione laudantium culpa obcaecati consequuntur illo nisi accusamus et placeat inventore voluptatibus, adipisci similique qui?",
    },
   ]
