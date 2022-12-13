@@ -64,13 +64,13 @@ const DestiNasi = ({img, destinasi}) => {
             </div>
             <div className="bg-[#FFF7E9] rounded-lg">
                 <div key={wisata3.id} className="relative">
-                    <Link to={`/detailwisata/${wisata3.id}`}> <img src={wisata3.url} alt="" className="rounded-xl p-1 w-full " /> </Link>
+                    <Link to={`/detailwisata/${wisata3.id}`}> <img src={wisata3.url} alt="" className="rounded-xl p-1 w-full  h-[290px] md:h-[300px] lg:h-[385px] xl:h-[540px] 2xl:h-[960px]" /> </Link>
                     <h2 className="absolute bottom-3 left-3 text-white font-bold lg:text-[25px] xl:text-[32px]">{wisata3.nama}</h2>
                 </div>
             </div>
             <div className="bg-[#FFF7E9] rounded-lg">
                 <div key={wisata4.id} className="relative">
-                    <Link to={`/detailwisata/${wisata4.id}`}> <img src={wisata4.url} alt="" className="rounded-xl p-1 w-full h-[290px] lg:h-[385px] xl:h-[540px] 2xl:h-[960px]" /> </Link>
+                    <Link to={`/detailwisata/${wisata4.id}`}> <img src={wisata4.url} alt="" className="rounded-xl p-1 w-full h-[300px]" /> </Link>
                     <h2 className="absolute bottom-3 left-3 text-white font-bold lg:text-[25px] xl:text-[32px]">{wisata4.nama}</h2>
                 </div>
             </div>

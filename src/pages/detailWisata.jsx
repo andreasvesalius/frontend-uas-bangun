@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import TempatWisata from "../components/TempatWisata";
-import SubWisata1 from "../components/SubWisata1";
+import DivWisata from "../components/DivWisata";
 import SubWisata from "../components/SubWisata";
 import Comment from "../components/Comment";
 
@@ -28,12 +28,11 @@ const DetailWisata = () => {
       getWisata();
     }, []);
 
-    const { wisataid } = useParams();
     const [subWisata, setSubWisata] = useState("");
 
     const getSubWisata = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/subwisata/${wisataId}`);
+        const response = await axios.get(`http://localhost:5000/subwisata/${id}`);
         setSubWisata(response.data);
         console.log(wisata)
       } catch (error) {
@@ -43,6 +42,22 @@ const DetailWisata = () => {
 
     useEffect(() => {
       getSubWisata();
+    }, []);
+
+    const [divWisata, setDivWisata] = useState("");
+
+    const getDivWisata = async () => {
+      try {
+        const response = await axios.get(`http://localhost:5000/divwisata/${id}`);
+        setDivWisata(response.data);
+        console.log(wisata)
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    useEffect(() => {
+      getDivWisata();
     }, []);
 
     return (
@@ -60,6 +75,13 @@ const DetailWisata = () => {
           destinasi={wisata.nama}
           id={wisata.id}
         />
+        <DivWisata
+        divWisataId={divWisata.divWisataId}
+        img={divWisata.url}
+        destinasi={divWisata.nama}
+        id={wisata.id}
+        />
+        <Comment/>
         <Footer/>
       </>
         

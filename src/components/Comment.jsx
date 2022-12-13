@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 
 const Comment = () => {
-
     const [comment, setComment] = useState([]);
 
     useEffect(() =>{
@@ -29,7 +28,7 @@ const Comment = () => {
                     "Content-type": "multipart/form-data",
                 },
             });
-            navigate("/detailWisata");
+            navigate("/");
         } catch (error) {
             console.log(error);
         }
@@ -48,7 +47,8 @@ const Comment = () => {
                 <h1 className="font-bold pb-5 text-center text-[25px]">Comment Pengunjung</h1>
                 {comment.map((comment) => (
                     <ul>
-                        <li key={comment.id} className="pb-2 text-slate-600 font-medium">{comment.Comment}</li>
+                        <li key={comment.id} className="pb-1 font-medium text-slate-500">{comment.createdAt}</li>
+                        <li key={comment.id} className="pb-2 text-slate-600 font-bold">{comment.Comment}</li>
                     </ul>
                 ))}
             </div> 
