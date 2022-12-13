@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
-const subWisata = ({img, tempat, deskripsi}) => {
+const SubWisata = ({img, tempat, deskripsi}) => {
     return(
         <>
         <div className="mb-20 mx-1 ">
@@ -17,4 +17,4 @@ const subWisata = ({img, tempat, deskripsi}) => {
     );
 }
 
-export default subWisata;
+export default SubWisata;

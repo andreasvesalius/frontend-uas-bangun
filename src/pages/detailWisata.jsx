@@ -1,60 +1,69 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import TempatWisata from "../components/tempatWisata";
-import View from "../assets/view.png";
+import TempatWisata from "../components/TempatWisata";
+import SubWisata1 from "../components/SubWisata1";
+import SubWisata from "../components/SubWisata";
 import Comment from "../components/Comment";
-import SubWisata from "../components/subWisata";
-import RectangleSub from "../assets/rectanglesub.png";
-import SubWisata1 from "../components/subWisata1";
-import mbw from "../assets/mbw.jpg";
 
-const imgWisata = [
-    {
-      img : mbw,
-      destinasi : "Malalayang Beach Walk",
-      deskripsi : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque quisquam molestiae minima quam aliquid ipsa accusantium cum ex totam ratione laudantium culpa obcaecati consequuntur illo nisi accusamus et placeat inventore voluptatibus, adipisci similique qui?",
-   },
-  ]
 
-  const Wisata = [
-    {
-      img : RectangleSub,
-      tempat : "Pohon Kasih",
-      deskripsi : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque quisquam molestiae minima quam aliquid ipsa accusantium cum ex totam ratione laudantium culpa obcaecati consequuntur illo nisi accusamus et placeat inventore voluptatibus, adipisci similique qui?",
-   }, 
-  ]
-
-  const Wisata1 = [
-    {
-      img : RectangleSub,
-      tempat : "Area Food Truck",
-      deskripsi : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque quisquam molestiae minima quam aliquid ipsa accusantium cum ex totam ratione laudantium culpa obcaecati consequuntur illo nisi accusamus et placeat inventore voluptatibus, adipisci similique qui?",
-   },
-  ]
-
-const detailWisata = () => {
-    return (
-        <>
-            <NavBar/>
-            {imgWisata.map((data) => (
-                <TempatWisata img={data.img} destinasi={data.destinasi} deskripsi={data.deskripsi}/>
-            ))}
-            <div className="">
-              {Wisata.map((data) => (
-                  <SubWisata img={data.img} tempat={data.tempat} deskripsi={data.deskripsi}/>
-              ))}    
-              {Wisata1.map((data) => (
-                  <SubWisata1 img={data.img} tempat={data.tempat} deskripsi={data.deskripsi}/>
-              ))} 
-            </div>
-            <Comment/>
-            <Footer/>
-        </>
-    )
-    
-  };
+const DetailWisata = () => {
   
-  export default detailWisata;
+    const { id } = useParams();
+    const [wisata, setWisata] = useState("");
+
+    const getWisata = async () => {
+      try {
+        const response = await axios.get(`http://localhost:5000/wisata/${id}`);
+        setWisata(response.data);
+        console.log(wisata)
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    useEffect(() => {
+      getWisata();
+    }, []);
+
+    const { wisataid } = useParams();
+    const [subWisata, setSubWisata] = useState("");
+
+    const getSubWisata = async () => {
+      try {
+        const response = await axios.get(`http://localhost:5000/subwisata/${wisataId}`);
+        setSubWisata(response.data);
+        console.log(wisata)
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    useEffect(() => {
+      getSubWisata();
+    }, []);
+
+    return (
+      <>
+        <NavBar/>
+        <TempatWisata 
+          img={wisata.url}
+          id={wisata.id}
+          destinasi={wisata.nama}
+          deskripsi={wisata.deskripsi}
+        />
+        <SubWisata
+          wisataId={subWisata.wisataId}
+          img={wisata.url}
+          destinasi={wisata.nama}
+          id={wisata.id}
+        />
+        <Footer/>
+      </>
+        
+    );
+};
+  
+export default DetailWisata;
